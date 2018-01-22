@@ -1,0 +1,16 @@
+{% extends "_base.html" %} {% block content %}
+<div class="container" style="text-align: center;">
+    <h1 class="title text-center">The Docker</h1>
+    <h3 class="text-center">An organization lead by programmers who aim to engage in activities that support the international community.</h3>
+
+    {% if not current_user.is_authenticated %}
+    <p class="text-center">
+        <a href="/join" class="button button-large" role="button">Join Us</a>
+    </p>
+    {% else %}
+    <p class="text-center">
+        <a href="/resources" class="button button-large" role="button">Learn More</a>
+    </p>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+# Example of what your .env file should look like
+
+DEBUG=False
+SECRET_KEY=<random string>
+DB_NAME=postgres
+DB_USER=postgres
+DB_PASS=postgres
+DB_SERVICE=postgres
+DB_PORT=5432
+MAIL_SENDER=<a gmail address>
+MAIL_PASS=<corresponding gmail password>

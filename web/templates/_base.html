@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Docker</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="/" class="active">The Docker</a>
+            </li>
+            <li>
+                <a href="/join">Join</a>
+            </li>
+            <li>
+                <a href="/resources">Resources</a>
+            </li>
+            <li>
+                {% if not current_user.is_authenticated %}
+                <a href="/login">Log in</a>
+                {% else %}
+                <a href="/logout">Log out</a>
+                {% endif %}
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container" style="padding-top: 12rem;"></div>
+    {% block content %}{% endblock %}
+</body>
+
+</html>

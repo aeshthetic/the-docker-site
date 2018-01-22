@@ -1,0 +1,8 @@
+{% extends "_base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row top-buffer">
+        <h1>{% if success %}Your account has been confirmed!{% else %}Confirmation failure! Please try again.{% endif %}</h1>
+    </div>
+</div>
+{% endblock %}
